@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <h1>🚀 WebUnity sur Azure</h1>
-      <p>Bienvenue dans une version avancée !</p>
+      <p>Bienvenue, est ce que je mérite 20/20 ? Je pense que oui</p>
       <p><strong>Heure serveur actuelle :</strong> ${currentTime}</p>
       <div class="badge">Node.js + Express + CSS animé</div>
       <button class="dark-toggle" onclick="toggleDark()">🎨 Activer le mode sombre</button>
@@ -72,7 +72,7 @@ app.get('/', (req, res) => {
       <script>
         function toggleDark() {
           document.body.style.background = document.body.style.background.includes('black')
-            ? "linear-gradient(135deg, #1f4037, #99f2c8)"
+            ? "linear-gradient(135deg, #1f4037,rgb(53, 75, 65))"
             : "black";
           document.body.style.color = document.body.style.color === 'white' ? 'lightgreen' : 'white';
         }

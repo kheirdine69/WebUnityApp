@@ -63,7 +63,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <h1>🚀 WebUnity sur Azure</h1>
-      <p>Bienvenue dans une version avancée et dynamique !</p>
+      <p>Bienvenue, je mérite 20/20 non ?!</p>
       <p><strong>Heure actuelle :</strong> <span id="clock"></span></p>
       <div class="badge">Node.js + Express + JS temps réel</div>
       <button class="dark-toggle" onclick="toggleDark()">🎨 Activer le mode sombre</button>

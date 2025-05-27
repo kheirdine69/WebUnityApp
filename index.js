@@ -5,7 +5,6 @@ const port = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  const currentTime = new Date().toLocaleString('fr-FR');
   res.send(`
     <!DOCTYPE html>
     <html lang="fr">
@@ -64,17 +63,26 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <h1>🚀 WebUnity sur Azure</h1>
-      <p>Bienvenue, est ce que je mérite 20/20 ? Je pense que oui</p>
-      <p><strong>Heure serveur actuelle :</strong> ${currentTime}</p>
-      <div class="badge">Node.js + Express + CSS animé</div>
+      <p>Bienvenue dans une version avancée et dynamique !</p>
+      <p><strong>Heure actuelle :</strong> <span id="clock"></span></p>
+      <div class="badge">Node.js + Express + JS temps réel</div>
       <button class="dark-toggle" onclick="toggleDark()">🎨 Activer le mode sombre</button>
 
       <script>
+        function updateClock() {
+          const now = new Date();
+          const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+          document.getElementById('clock').textContent = now.toLocaleTimeString('fr-FR', options);
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
         function toggleDark() {
-          document.body.style.background = document.body.style.background.includes('black')
-            ? "linear-gradient(135deg, #1f4037,rgb(53, 75, 65))"
+          const isDark = document.body.style.background.includes('black');
+          document.body.style.background = isDark
+            ? "linear-gradient(135deg, #1f4037, #99f2c8)"
             : "black";
-          document.body.style.color = document.body.style.color === 'white' ? 'lightgreen' : 'white';
+          document.body.style.color = isDark ? "white" : "lightgreen";
         }
       </script>
     </body>

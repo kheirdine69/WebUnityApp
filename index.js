@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <h1>🚀 WebUnity App déployée sur Azure</h1>
-      <p>Bienvenue ! Ceci est une version améliorée de votre application.</p>
+      <p>Bienvenue ! Mon application mérite 20/20.</p>
       <div class="badge">Node.js + Express + Azure</div>
     </body>
     </html>

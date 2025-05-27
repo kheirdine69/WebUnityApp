@@ -1,16 +1,5 @@
 # Rapport de TP – Migration Cloud Azure WebUnityApp
 
-## 🎯 Contexte professionnel
-
-Vous êtes développeur full stack dans l'entreprise **WebUnity**, une startup spécialisée dans la gestion de contenus web pour des TPE/PME.  
-Suite à sa croissance, l’entreprise a décidé de migrer ses applications web vers **Azure App Service** pour :
-- Gagner en **scalabilité**
-- Réduire la **maintenance physique**
-- Faciliter les **déploiements CI/CD**
-- Améliorer la **sécurité et le monitoring**
-
----
-
 ## 🚀 Objectif de la mission
 
 Migrer une application Node.js vers Azure App Service avec :
@@ -76,15 +65,6 @@ app.listen(port, () => {
 | Application Insights | Non utilisé ici | 0 €       | 0 €         |
 
 **Total estimé : 0 € / an** (en plan gratuit)
-
----
-
-## 📸 Captures à insérer
-
-- Création de la Web App
-- Paramètres choisis (Node.js, Linux, F1)
-- Déploiement Zip
-- Affichage de l’app en ligne
 
 ---
 
